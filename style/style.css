@@ -59,7 +59,7 @@ footer{
 
        .main-index .cajas-secciones{
         align-items: center;
-        margin: 3rem;
+        margin: 2.5rem;
         justify-content: center;
         justify-items: center;
         display: block;
@@ -76,13 +76,24 @@ footer{
         text-align: center;
         
       }
-      .info-index p{
+      .info-index .p-1{
         margin: 2rem;
+      }
+      .p-2{
+        margin-top: 2rem;
+        margin-bottom: 9rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
       }
       .info-index button{
         background-color: #8DC6D1;
         border: none;
         padding: 0.5rem;
+        margin: 1rem;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+
       }
       .info-index button a{
         text-decoration: none;
@@ -90,5 +101,85 @@ footer{
 
       }
 
+      @media screen and (min-width: 1200px) {
+        section .secciones-index{
+            display: grid;
+        }
+       .main-index .cajas-secciones{
+        display: flex;
+         }
+      
+        
+        .info-index{
+            display: flex;
+            align-items: center;
+        }
+        .info-index .img-surf{
+            height: 60vh;
+            width: 90vh;  
+            margin: 2rem;
+            justify-content: flex-start;
+            
+            
+            
+        }
+        .info-index .p-1{
+            text-align: center;
+            margin: 6rem;
+            align-items: center;
+        }
+        .info-index button{
+             
+               
 
+        }
+
+        .info-index .img-lauti{
+            display: flex;
+            height: 60vh;
+            width: 85vh;
+            margin: 2rem;
+          } 
+        }
   
+/* estilo shop*/
+
+.header-pages{
+    background-color: #8DC6D1;
+    color: #F8F7F6;
+}
+.header-pages h1{
+    color: #E4E1AA;
+}
+.header-pages nav {
+    color: #F8F7F6;
+      text-decoration: none;
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      text-align: end;
+      display: inline-flex;
+      list-style: none;
+}
+
+
+.header-pages ul{
+    list-style: none;
+    display: flex;
+}
+.header-pages nav a {
+    text-decoration: none;
+    color: #F8F7F6;
+    font-family: open-sans, sans-serif;
+    text-decoration: bold;
+    display: flex;
+     }
+
+.section-shop h2{
+font-family:arsenica-variable, sans-serif ;
+font-size: 2rem;
+text-align: center;
+margin: 1rem;
+color: #8DC6D1;
+}
+
