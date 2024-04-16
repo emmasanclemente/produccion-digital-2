@@ -44,16 +44,17 @@ footer{
         font-family: aileron, sans-serif;
         font-size: 3rem;
         margin-left: 1rem;
+        text-align: right;
     
       
     }
      .header-index .nav-index{
        
-      color: #F8F7F6;
+      color: #8DC6D1;
       text-decoration: none;
       display: flex;
       gap: 1rem;
-    justify-content: end;
+    
       list-style: none;
       margin-right:2rem;
      
@@ -63,6 +64,7 @@ footer{
       }
       .header-index nav ul{
         list-style: none;
+        text-align: right;
       }
 
    
@@ -87,15 +89,22 @@ footer{
         background-color: #8DC6D1;
         text-align: center;
         margin-bottom: 3rem;
-        color:#121110;
+        color:#F8F7F6;
         }
 
        .main-index .cajas-secciones{
         align-items: center;
-        margin: 2.5rem;
+    text-align: center;
         justify-content: center;
         justify-items: center;
         display: block;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+          }
+
+          .cajas-secciones :hover{
+            transform: scale(1.02);
+            opacity: ;
           }
 
           .info-index .img-surf{
@@ -118,7 +127,12 @@ footer{
         margin-left: 2rem;
         margin-right: 2rem;
       }
-      .info-index button{
+      .div-button{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+       .button-index{
         background-color: #8DC6D1;
         border: none;
         padding: 0.5rem;
@@ -126,12 +140,24 @@ footer{
         margin-bottom: 3rem;
         font-size: 1.5rem;
         border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
 
       }
-      .info-index button a{
+       .button-index a{
         text-decoration: none;
         color: #E4E1AA;
 
+      }
+
+      .img-contacto{
+        height: 3.2rem;
+       margin: 0.7rem;
+
+      }
+      .rollover :hover{
+        transform: scale(1.05);
       }
 
       @media screen and (min-width: 1200px) {
@@ -142,11 +168,14 @@ footer{
            
             
         }
+
         section .secciones-index{
             display: grid;
         }
        .main-index .cajas-secciones{
         display: flex;
+        margin-left: 1rem;
+        margin-right: 1rem;
          }
       
         
@@ -155,8 +184,8 @@ footer{
             align-items: center;
         }
         .info-index .img-surf{
-            height: 60vh;
-            width: 90vh;  
+            height: 70vh;
+            width: 95vh;  
             margin: 2rem;
             justify-content: flex-start;
             
@@ -167,13 +196,20 @@ footer{
             text-align: center;
             margin: 6rem;
             align-items: center;
+            font-size: 1.3rem;
+        }
+        .info-index .p-2{
+            text-align: center;
+            margin: 6rem;
+            align-items: center;
+            font-size: 1.3rem;
         }
        
 
         .info-index .img-lauti{
             display: flex;
-            height: 60vh;
-            width: 85vh;
+            height: 50vh;
+            width: 90vh;
             margin: 2rem;
           } 
         }
@@ -183,9 +219,14 @@ footer{
 .header-pages{
     background-color: #8DC6D1;
     color: #F8F7F6;
+
 }
 .header-pages h1{
-    color: #E4E1AA;
+    color: #E4E1AA; 
+        font-family: aileron, sans-serif;
+        font-size: 3rem;
+        margin-left: 1rem;
+        text-align: right;
 }
 .header-pages nav {
     color: #F8F7F6;
@@ -196,26 +237,128 @@ footer{
       text-align: end;
       display: inline-flex;
       list-style: none;
+      justify-content: space-around;
+
+      
 }
 
 
 .header-pages ul{
     list-style: none;
+    justify-content: end;
     display: flex;
+    
 }
 .header-pages nav a {
     text-decoration: none;
     color: #F8F7F6;
-    font-family: open-sans, sans-serif;
+    font-family: arsenica-variable, sans-serif;
     text-decoration: bold;
     display: flex;
+    justify-content: right;
      }
 
-.section-shop h2{
+h2{
 font-family:arsenica-variable, sans-serif ;
 font-size: 2rem;
 text-align: center;
-margin: 1rem;
+margin: 2rem;
 color: #8DC6D1;
 }
 
+.img-shop{
+    height: 60vh;
+    
+ 
+}
+
+.div-img-shop{
+    align-items: center;
+    text-align: center;
+        justify-content: center;
+        justify-items: center;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+   
+}
+.div-img-shop p{
+    text-align: center;
+    text-decoration: underline;
+}
+
+form{
+    text-align: center;
+    font-size: larger;
+    background-color: #8DC6D1;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+form h3{
+  color: #F8F7F6;
+  font-family: arsenica-variable, sans-serif ;
+  font-size: 2rem;
+
+}
+
+form div label{
+  color: #F8F7F6;
+  font-size: 1.2rem;
+  font-family: arsenica-variable, sans-serif ;
+}
+
+form div input{
+  font-family:aileron, sans-serif ;
+  border-radius: none;
+  font-size: 0,7rem;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .div-img-shop{
+        justify-content: center;
+                    display: grid;
+                    grid-template-columns: repeat(3fr );
+    }
+
+      .img-shop{
+     grid-area: "img";
+           
+         }
+    
+}
+
+/*estilo riders*/
+
+/*estilo nosotros*/
+.p-nosotros{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.img-nosotros{
+    height: 60vh;
+}
+.collage-nosotros{
+    margin: 1rem;
+}
+
+.p-nosotros{
+  animation-name: ;
+}
+
+@keyframes animacion{
+  0%{
+
+  }
+  25%{
+
+  }
+  50%{
+
+  }
+  100%{
+
+  }
+}
