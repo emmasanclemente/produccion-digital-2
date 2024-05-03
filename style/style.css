@@ -10,10 +10,15 @@ footer{
     padding: 3rem;
 
   }
-  footer p{
+  footer section p{
     text-align: center;
     color: #F8F7F6;
     margin: 1rem;
+
+  }
+  .div-titulos-footer{
+    display: flex;
+    justify-content: space-between;
   }
   .h-footer{
     color:#E4E1AA;
@@ -22,12 +27,21 @@ footer{
     font-weight: 500;
     font-style: normal;
   }
-  .contacto{
+ footer section h5 {
     font-size: 2.5rem;
      color: #F8F7F6;
      font-family:arsenica-variable, sans-serif;
      
   }
+
+  footer section h4{
+    font-family: "chorine-large";
+    font-weight: 500;
+    font-style: normal;
+    color: #E4E1AA;
+    font-size: 3rem;
+  }
+
 
   .png-footer{
     height: 10rem;
@@ -54,7 +68,7 @@ font-weight: 500;
 font-style: normal;
   }
 
-  .h1-pages{
+ section nav  .h1-pages{
     font-family: "chorine-large";
     font-weight: 500;
     font-style: normal;
@@ -138,6 +152,8 @@ font-style: normal;
           
          }
 
+
+
         
       .main-index .caja-descuento{
         background-color: #8DC6D1;
@@ -177,6 +193,9 @@ font-style: normal;
       .info-index .p-1{
         margin: 2rem;
       }
+
+      .p-1 :animate__fadeIn
+
       .p-2{
         margin-top: 2rem;
         margin-bottom: 9rem;
@@ -189,18 +208,17 @@ font-style: normal;
         text-align: center;
         justify-content: center;
       }
-       .button-index{
+       div .button-index{
         background-color: #8DC6D1;
         border: none;
         padding: 0.5rem;
-        margin: 1rem;
+        
         margin-bottom: 3rem;
         font-size: 1.5rem;
         border-radius: 1rem;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+       
         color: #E4E1AA;
+        font-family:arsenica-variable, sans-serif ;
        
 
       }
@@ -210,16 +228,27 @@ font-style: normal;
 
       }
 
+    
+
+      .a-suscribite :hover {
+        transform: scale(1.05);
+      }
+
       .img-contacto{
         height: 3.2rem;
        margin: 0.7rem;
 
       }
       .rollover :hover{
+        text-decoration: underline;
         transform: scale(1.05);
+        
       }
 
       @media screen and (min-width: 1100px) {
+        .header-movil{
+          display: none;
+        }
         .header-index{
   
         width: 100%;
@@ -492,10 +521,7 @@ margin-top: 2rem;
   padding: 0.7rem;
   margin: 1rem;
 }
-img-collage{
- height: 20rme;
 
-}
 
 
  
