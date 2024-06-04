@@ -64,7 +64,17 @@ footer{
   .logo {
     font-size: 3rem;
     font-family: "chorine-large";
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  .logo-pages{
+    font-size: 3rem;
+    font-family: "chorine-large";
+    margin-left: 2rem;
+   margin-bottom: 1rem;
+    align-items: center;
   }
   
   .menu {
@@ -101,7 +111,7 @@ footer{
 
   
   /* Estilos para dispositivos móviles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     .menu {
       flex-direction: column; /* Cambiar la orientación del menú a vertical */
       display: none; /* Ocultar el menú en dispositivos móviles */
@@ -135,7 +145,7 @@ footer{
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     .header-pages .menu{
       flex-direction: column; /* Cambiar la orientación del menú a vertical */
       display: none; /* Ocultar el menú en dispositivos móviles */
@@ -159,6 +169,7 @@ footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 1rem;
     }
     }
     
@@ -178,28 +189,9 @@ footer{
 }
     
         
-  h1{
-    font-family: "chorine-large";
-    font-weight: 500;
-    font-style: normal;
-  }
-
- section nav  .h1-pages{
-    font-family: "chorine-large";
-    font-weight: 500;
-    font-style: normal;
-  }
-    .header-index .h1-index{
-        color: #8DC6D1;
-        
-        font-size: 3rem;
-        font-weight: 500;
-        font-style: normal;
-        margin-left: 3rem;
-        text-align: right;
+ 
+ 
     
-      
-    }
      .header-index .nav-index{
        
       color: #8DC6D1;
@@ -220,11 +212,13 @@ footer{
         gap: 2rem;
         justify-items: flex-end;
         justify-content: space-around;
+        margin-top: 1rem;
       }
       .header-index nav ul{
         list-style: none;
         text-align: right;
         justify-content: right;
+        margin-top: 1rem;
       }
 
    
@@ -277,6 +271,7 @@ footer{
         margin-bottom: 3rem;
         color:#F8F7F6;
         font-family:arsenica-variable, sans-serif  ;
+        font-size: 1.3rem;
         }
 
        .main-index .cajas-secciones{
@@ -312,11 +307,8 @@ footer{
 
       .p-1 :animate__fadeIn
 
-      .p-2{
+      .info-index div .p-2{
         margin-top: 2rem;
-        margin-bottom: 9rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
         text-align: center;
       }
       .div-button{
@@ -386,6 +378,7 @@ footer{
           display: flex;
           justify-content: space-between;
           align-items: center;
+          margin-top: 2rem;
           
         }
 
@@ -533,7 +526,7 @@ form div input{
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
     .div-shop{
         justify-content: center;
                     display: grid;
@@ -567,7 +560,7 @@ margin-top: 2rem;
  
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1100px){
   .div-riders{
     display: flex;
     flex-flow: wrap;
@@ -614,10 +607,7 @@ main section h2{
     margin: 1rem;
     justify-content: center;
 }
-.collage-nosotros{
-    margin: 1rem;
-    display: flex;
-}
+
 
 .boton-registro{
   font-family: arsenica-variable, sans-serif;
@@ -632,11 +622,6 @@ main section h2{
 
 
  
-.collage-nosotros{
-  text-align: center;
-  display: flex;
-  flex-flow: wrap;
-}
 
 
 
